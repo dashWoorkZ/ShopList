@@ -149,7 +149,6 @@ header h1 {
     font-weight: 700;
     text-transform: capitalize;
     align-items: center;
-
   }
   
 /*
@@ -229,8 +228,6 @@ header h1 {
                 text-shadow: 0 0.05rem 0.05rem rebeccapurple;
             }
         }
-        
-      
         
         .remove__item {
           display: inline flex;
