@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: inline block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 1.25rem;
+}
+
+header h1 {
+  font-weight: 700;
+  color: blue;
+  text-shadow: 0.02675rem 0.02675rem gold;
+}
+
+.dSSLogo {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+
+  & img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgb(177, 206, 233);
+  border: 0 0.2rem groove purple;
+  outline: 0.2rem ridge gold;
+  border-radius: 1rem 1rem 0 0 
+}
+
+.edit-mode {
+  color: #ccc;
+}
+
+  /* Form & Input */
+.form-input {
+  width: 100%;
+  font-size: clamp(1.1rem, 1.2ch, 1.5rem);
+  margin-block-end: 1.5rem;
+  padding-inline: 0.5rem;
+  padding-block: 0.05rem;
+  border: 0.1rem solid #90c0c4;
+  border-radius: 5px;
+  background-color:#90c0c4;
+  color: rgb(255, 230, 0);
+  text-shadow: 0 0.02675rem 0.02675rem hsla(270, 50%, 40%);
+  outline: none;
+  transition: all 300ms ease-in-out;
+
+  &:focus-within {
+    color: rgb(255, 230, 0);
+    text-shadow: 0 0.02675rem 0.02675rem blue;
+    border: 0.1rem solid #05b4c4;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    background-color:#05b4c4;
+    letter-spacing: 0.5rem;
+  }
+}
+
+.form-input-filter {
+  margin-block-start: 1.5rem;
+  width: 100%;
+  font-size: clamp(1.1rem, 1.2ch, 1.5rem);
+  margin-block-end: 1.5rem;
+  padding-inline: 0.5rem;
+  padding-block: 0.05rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  color: hsla(240, 100%, 50%, 0.2);
+  text-shadow: 0 0.02675rem 0.02675rem hsla(270, 50%, 40%, 0.2);
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: all 300ms ease-in-out;
+
+    &:focus {
+      border: 0.1rem solid rebeccapurple;
+      color: hsla(240, 100%, 50%);
+      text-shadow: 0 0.02675rem 0.02675rem hsla(270, 50%, 40%);
+      letter-spacing: 0.05rem;
+      font-weight: 700;
+      background: beige;
+    }
+}
+
+/*
+      //=== Items ===\\\
+       
+*/
+
+.items {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+  .items li {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    border: 0.2rem groove rgb(5, 53, 156);
+    border-radius: 0.5rem;
+    padding: 10px 15px;
+    margin: 0 5px 20px;
+    font-weight: 700;
+    background-color: #f5ecb1;
+    outline: 0.2rem ridge rgb(241, 167, 7);
+    outline-offset: 0.05rem;
+    color: blue;
+    text-shadow: 0 0.02675rem 0.02675rem gold;
+    letter-spacing: 0.1rem;
+    font-size: clamp(1rem, 1.2ch, 1.5rem);
+    font-weight: 700;
+    text-transform: capitalize;
+    align-items: center;
+
+  }
+  
+/*
+      //=== End Items ===\\\
+       
+*/
+
+/*
+      //=== Button CSS3 ===\\\
+       
+*/
+        button {
+            max-width: 10rem;
+            text-align: center;
+            font-weight: 700;
+            border-radius: 0.5rem;
+            padding-inline: 0.25rem;
+            padding-block: 0.25rem;
+            border: none;
+            outline: none;
+            letter-spacing: 0.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: clamp(1rem, 1.2ch, 1.5rem);
+            transition: all 300ms ease-in-out;
+            cursor: pointer;
+        }
+
+        .addBtn {             
+            color: gold;
+            text-shadow: 0 0.05rem 0.025rem purple;
+            background-color: rgb(195, 218, 240);
+            border: 0 0.2rem groove purple;
+            outline: 0.2rem ridge gold;
+            
+            &:hover {
+              border: 0.2rem inset orange;
+              outline: 0.2rem ridge green;
+              background-color: rgb(197, 248, 14);
+              color: rebeccapurple;
+              text-shadow: 0 -0.05rem -0.05rem red;
+            }
+          }
+
+        .updateBtn {             
+            color: purple;
+            text-shadow: 0 0.05rem 0.025rem blue;
+            background-color: skyblue;
+            border: 0 0.2rem groove orange;
+            outline: 0.2rem ridge green;
+            
+            &:hover {
+              border: 0.2rem inset purple;
+              outline: 0.2rem ridge yellow;
+              background-color: skyblue;
+              color: orange;
+              text-shadow: 0 0.05rem 0.05rem blue;
+            }
+        }
+        
+        .delBtnIcon {
+            display: inline flex;
+            justify-content: center;
+            align-items: center;
+            color: red;
+            text-shadow: 0 0.05rem 0.05rem gold;
+            transition: all 500ms ease-in-out;
+        
+            &:hover {
+                /* border: 0.2rem inset red;
+                outline: 0.2rem ridge red;
+                outline-offset: 0.025rem; */
+                font-size: clamp(1.5rem, 1.7ch, 2rem);
+                background-color: transparent;
+                color: red;
+                text-shadow: 0 0.05rem 0.05rem rebeccapurple;
+            }
+        }
+        
+      
+        
+        .remove__item {
+          display: inline flex;
+          justify-content: center;
+          align-items: center;
+          font-size: clamp(1rem, 1.2ch, 1.5rem);
+          font-weight: 700;
+          border: 0.2rem groove rgb(5, 53, 156);
+          outline: 0.2rem ridge red;
+          border-radius: 0.5rem;
+          background-color: #b8faee;
+          padding-inline: 0.25rem;
+          padding-block: 0.5rem;
+          max-width: 2rem;
+          max-height: 2rem;
+          gap: 0.5rem;
+          
+
+            &:hover {
+              border: 0.2rem inset red;
+              outline: 0.2rem ridge blue;
+              
+              /*  outline-offset: 0.025rem; */
+              background-color: rgb(105, 168, 204);
+              /* color: red;
+              text-shadow: 0 0.05rem 0.05rem rebeccapurple; */
+          }
+        }
+        
+        #clearBtn {
+            border: 0 0.2rem groove rgb(1, 24, 73);
+            outline: 0.2rem ridge rgb(241, 167, 7);
+            background-color: #bde7ff;
+            color: orange;
+            text-shadow: 0 0.05rem 0.05rem blue;
+            transition: all 500ms ease-in-out;
+
+            &:hover {
+              border: 0.2rem inset green;
+              outline: 0.2rem ridge yellow;
+              background-color: skyblue;
+              color: gold;
+              text-shadow: 0 0.05rem 0.05rem rebeccapurple;
+          }
+        }
+  
+/*
+    //=== End Button CSS3 ===\\\
+*/
+/*
+    //=== Footer CSS3 ===\\\
+*/
+
+footer {
+  width: 100%;
+  display: inline flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.5rem, 0.6ch, 0.8rem);
+  font-weight: 700;
+  color: blue;
+  text-shadow: 0 0.02675rem 0.02675rem rebeccapurple;
+  letter-spacing: 0.05rem;
+}
+
+/*
+    //=== End Footer CSS3 ===\\\
+*/
+
+/*
+    //=== Media Queries CSS3 ===\\\
+*/
+
+@media (max-width: 500px) {
+  .items li {
+    width: 100%;
+  }
+}
+
+/*
+    //=== End Media Queries CSS3 ===\\\
+*/
